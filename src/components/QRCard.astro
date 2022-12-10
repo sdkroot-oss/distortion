@@ -1,0 +1,27 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<div
+	class="shadow-sm flex flex-col w-[320px] h-[500px] justify-content align-items bg-white rounded-2xl pt-4 px-4 pb-[40px]"
+>
+	<img class="h-[288px] w-[288px] rounded-lg" src="/image-qr-code.png" />
+	<p
+		class="text-gray-600 px-4 font-bold pt-6 pb-4 text-center font-['Outfit'] text-[21px]"
+	>
+		{title}
+	</p>
+	<p
+		class="text-gray-400 px-[30px] font-normal text-gray-400 text-center font-['Outfit'] text-[15px]"
+	>
+		{body}
+	</p>
+</div>
+
+<style></style>

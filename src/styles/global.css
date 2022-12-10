@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { font-family: "Outfit", sans-serif; }
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+.blinking-text::after {
+    content: "|";
+    height: 100%;
+    background: transparent;
+    display: inline-block;
+    animation: cursor-blink 1500ms steps(2) infinite;
+}

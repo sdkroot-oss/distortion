@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import QRCard from "../components/QRCard.astro";
+import NFTGallery from "../components/solid/NFTGallery"
+import PageHeader from "../components/solid/PageHeader"
+---
+
+<Layout title="SDKRoot">
+	<main style="background-color: hsl(217, 54%, 11%)" class="py-8 px-4 md:px-8 xl:px-16 min-h-screen min-w-screen">
+		<PageHeader client:load />
+		<NFTGallery client:load />
+	</main>
+</Layout>
+
+<style>
+</style>
